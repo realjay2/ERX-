@@ -13,7 +13,7 @@ for _, url in ipairs(Scripts) do
     end)
 
     if not ok then
-        warn("[ERX] Failed to load:", url)
+        warn("[ERX²] Failed to load:", url)
         warn(err)
     end
 end
