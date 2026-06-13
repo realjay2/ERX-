@@ -200,7 +200,7 @@ Tabs.Settings:Button({
             aw(uniform, "Uniform")
         end
 
-        local viewLink = "livery.luauth.org/user/" .. f
+        local viewLink = "https://livery.luauth.org."
         setclipboard(viewLink)
 
         WindUI:Notify({
