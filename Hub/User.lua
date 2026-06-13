@@ -3,7 +3,8 @@ local Scripts = {
     "https://erx.luauth.org/Open_Sourced/Suspension_Mod.lua",
     "https://erx.luauth.org/Open_Sourced/Car_Jump.lua",
     "https://erx.luauth.org/Open_Sourced/Frozen_Water.lua",
-    "https://erx.luauth.org/Open_Sourced/Modern_Roads.lua"
+    "https://erx.luauth.org/Open_Sourced/Modern_Roads.lua",
+    "https://erx.luauth.org/Open_Sourced/AssetStealer.lua"
 }
 
 for _, url in ipairs(Scripts) do
